@@ -1,0 +1,229 @@
+/* --- CUSTOM STYLES STOMACARE --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Variabel Warna Global */
+:root {
+    --stoma-green: #458b68;
+    --stoma-dark: #1a3c30;
+    --stoma-light: #98e4b8;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- UTILITIES & LAYOUT --- */
+.bg-stoma-green {
+    background-color: var(--stoma-green);
+}
+
+.bg-stoma-dark {
+    background-color: var(--stoma-dark);
+}
+
+.text-stoma-green {
+    color: var(--stoma-green);
+}
+
+.bg-stoma-light {
+    background-color: var(--stoma-light);
+}
+
+.text-stoma-light {
+    color: var(--stoma-light);
+}
+
+/* Dekorasi latar belakang Hero */
+.hero-bg-decoration {
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    width: 60%;
+    height: 100%;
+    background-color: var(--stoma-light);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.3;
+    filter: blur(80px);
+}
+
+.card-shadow {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+}
+
+/* Tombol & Hover */
+.btn-hover {
+    transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(69, 139, 104, 0.2);
+}
+
+/* --- NAV BAR --- */
+.nav-link {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    padding: 8px 20px;
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.nav-link-active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white !important;
+    font-weight: 600;
+}
+
+.nav-link-active::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2.5px;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* --- HERO ILLUSTRATION --- */
+.illustration-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.organic-blob {
+    width: 110%;
+    height: auto;
+    z-index: 1;
+    filter: drop-shadow(0 20px 30px rgba(152, 228, 184, 0.3));
+}
+
+.stomach-vector {
+    position: absolute;
+    width: 80%;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.15));
+}
+
+/* --- CARD LAYER EFFECTS --- */
+.layered-card {
+    position: relative;
+    z-index: 5;
+    background: white;
+    border-radius: 2rem;
+    padding: 2.5rem;
+}
+
+.card-bg-layer {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--stoma-light);
+    border-radius: 2.5rem;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.ref-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ref-card:hover {
+    transform: scale(1.02);
+    background-color: rgba(152, 228, 184, 0.1);
+}
+
+/* --- AUTH CARD STYLING (Login/Register) --- */
+.auth-card {
+    min-height: 550px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #4b5563;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #f9fafb;
+    border-color: var(--stoma-green);
+    color: var(--stoma-green);
+}
+
+/* Form Inputs */
+.input-group {
+    position: relative;
+}
+
+.input-group i {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: #9ca3af;
+}
+
+.input-group input,
+.form-input {
+    width: 100%;
+    background-color: #e8f5ee;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.form-input {
+    padding-left: 1rem;
+}
+
+.input-group input:focus,
+.form-input:focus {
+    border-color: var(--stoma-green);
+}
+
+/* Dashboard Utils */
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid #f1f5f9;
+}
+
+.badge {
+    background-color: #e8f5ee;
+    color: var(--stoma-green);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
