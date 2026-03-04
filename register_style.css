@@ -1,18 +1,16 @@
-/* Container Utama */
 .container {
   background-color: #fff;
   border-radius: 25px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
-  display: flex; /* Membagi kiri dan kanan */
+  display: flex;
   width: 850px;
   max-width: 100%;
   min-height: 550px;
-  overflow: hidden; /* Agar sudut tumpul tetap terjaga */
+  overflow: hidden;
 }
 
-/* Panel Hijau */
 .overlay-container {
-  flex: 1; /* Mengambil setengah ruang */
+  flex: 1;
   background: #40916C; 
   color: #FFFFFF;
   display: flex;
@@ -21,7 +19,6 @@
   text-align: center;
   padding: 0 40px;
 }
-
 
 .form-container {
   flex: 1;
