@@ -1,9 +1,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 * {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -21,11 +21,12 @@ body {
     height: 600px;
     border-radius: 40px;
     display: flex;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
 }
 
+/* ── LEFT PANEL ── */
 .left-panel {
     background-color: #40916c;
     width: 45%;
@@ -40,8 +41,18 @@ body {
     position: relative;
 }
 
-.left-panel h1 { font-size: 40px; font-weight: 700; margin-bottom: 20px; }
-.left-panel p { font-size: 16px; line-height: 1.6; margin-bottom: 30px; opacity: 0.9; }
+.left-panel h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.left-panel p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
 
 .btn-login {
     background: transparent;
@@ -54,16 +65,27 @@ body {
     transition: 0.3s;
 }
 
-.btn-login:hover { background: white; color: #40916c; }
+.btn-login:hover {
+    background: white;
+    color: #40916c;
+}
 
+/* Stomach icon (Font Awesome) */
 .stomach-container {
     position: absolute;
-    bottom: -30px;
-    right: -75px;
+    bottom: -10px;
+    right: -20px;
     z-index: 5;
 }
-.stomach-container img { width: 180px; }
 
+.stomach-icon {
+    font-size: 130px;
+    color: rgba(255, 255, 255, 0.15);
+    display: block;
+    transform: rotate(-15deg);
+}
+
+/* ── RIGHT PANEL ── */
 .right-panel {
     width: 55%;
     display: flex;
@@ -73,13 +95,77 @@ body {
     padding: 40px;
 }
 
-.right-panel .title { color: #40916c; font-size: 42px; font-weight: 700; margin-bottom: 10px; }
+.right-panel .title {
+    color: #40916c;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
 
-.social-icons { display: flex; gap: 15px; margin-bottom: 15px; }
-.social-icons img { width: 45px; cursor: pointer; border-radius: 50%; border: 1px solid #eee; }
+/* ── SOCIAL ICONS ── */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
 
-.subtitle { color: #86dea6; font-size: 14px; margin-bottom: 20px; }
+.social-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    background-color: #fff;
+}
 
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.social-btn.facebook {
+    color: #1877f2;
+}
+
+.social-btn.facebook:hover {
+    background-color: #1877f2;
+    color: #fff;
+    border-color: #1877f2;
+}
+
+.social-btn.google {
+    color: #ea4335;
+}
+
+.social-btn.google:hover {
+    background-color: #ea4335;
+    color: #fff;
+    border-color: #ea4335;
+}
+
+.social-btn.linkedin {
+    color: #0a66c2;
+}
+
+.social-btn.linkedin:hover {
+    background-color: #0a66c2;
+    color: #fff;
+    border-color: #0a66c2;
+}
+
+/* ── SUBTITLE ── */
+.subtitle {
+    color: #86dea6;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* ── INPUT BOX ── */
 .input-box {
     background-color: #e9f5ef;
     width: 350px;
@@ -90,7 +176,16 @@ body {
     margin-bottom: 15px;
 }
 
-.input-icon { width: 25px; margin-right: 15px; opacity: 0.6; }
+.input-icon {
+    font-size: 18px;
+    color: #40916c;
+    opacity: 0.7;
+    margin-right: 15px;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
 .input-box input {
     background: transparent;
     border: none;
@@ -100,18 +195,44 @@ body {
     color: #333;
 }
 
-.eye-toggle { width: 20px; cursor: pointer; opacity: 0.5; }
+/* ── EYE TOGGLE ── */
+.eye-toggle {
+    font-size: 16px;
+    color: #40916c;
+    opacity: 0.5;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-left: 8px;
+    transition: opacity 0.2s;
+}
 
+.eye-toggle:hover {
+    opacity: 1;
+}
+
+/* ── REGISTER BUTTON ── */
 .btn-register {
     background-color: #40916c;
     color: white;
-    width: 250px;
-    padding: 15px;
+    width: 220px;
+    padding: 12px;
     border: none;
     border-radius: 35px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     margin-top: 15px;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(64, 145, 108, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #2d6a4f;
+    box-shadow: 0 8px 20px rgba(64, 145, 108, 0.4);
+    transform: translateY(-2px);
 }
