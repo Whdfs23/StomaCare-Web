@@ -1,11 +1,354 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>StomaCare - Sayangi Lambungmu, Hidup Jokowi Lebih Nyaman</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body class="overflow-x-hidden bg-white">
+        <!-- NAVIGATION -->
+        <div
+            class="fixed top-0 left-0 w-full flex justify-center p-4 md:p-6 z-50"
+        >
+            <nav
+                class="bg-stoma-dark w-full max-w-6xl rounded-full px-6 md:px-10 py-3 flex items-center shadow-2xl border border-white/10"
+            >
+                <div class="flex items-center gap-3">
+                    <img
+                        src="Assets/image 1 (logo_stomacare).png"
+                        alt="Logo StomaCare"
+                        class="w-8 h-8 object-contain"
+                        onerror="
+                            this.src =
+                                'https://api.dicebear.com/7.x/bottts/svg?seed=stoma'
+                        "
+                    />
+                    <span class="text-xl font-bold text-white tracking-tight"
+                        >StomaCare</span
+                    >
+                </div>
+<<<<<<< HEAD
+                <div class="hidden md:block ml-2">
+                    <a href="register.html"
+                        class="bg-white text-stoma-dark px-7 py-2.5 rounded-full font-bold text-xs btn-hover inline-block shadow-lg">
+                        Login/Register
+                    </a>
+=======
+                <div class="ml-auto flex items-center gap-2 md:gap-4">
+                    <div class="hidden md:flex items-center gap-1">
+                        <!-- nav-link-active di-set otomatis oleh script.js -->
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </div>
+                    <div class="hidden md:block ml-2">
+                        <a
+                            href="register.html"
+                            class="bg-white text-stoma-dark px-7 py-2.5 rounded-full font-bold text-xs btn-hover inline-block shadow-lg"
+                        >
+                            Login/Register
+                        </a>
+                    </div>
+>>>>>>> bb1a2960302f725f8bc75180d9d2d5c6e98cb65a
+                </div>
+                <div class="md:hidden ml-auto text-xl text-white">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+        <!-- HERO SECTION -->
+        <header
+            class="relative min-h-screen flex items-center pt-20 overflow-visible"
+        >
+            <div class="illustration-corner-wrapper">
+                <img
+                    src="Assets/fluent_shape-organic-16-filled (1).png"
+                    alt="Blob Background"
+                    class="corner-blob"
+                />
+                <img
+                    src="Assets/Vector (1).png"
+                    alt="Stomach Illustration"
+                    class="corner-stomach"
+                />
+            </div>
+            <div class="container mx-auto px-6 md:px-20 z-10">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1
+                        class="text-4xl md:text-7xl font-bold leading-tight mb-6"
+                    >
+                        Sayangi Lambungmu,<br />
+                        <span class="text-stoma-light brightness-90"
+                            >Hidup Lebih Nyaman</span
+                        >
+                    </h1>
+                    <p
+                        class="text-gray-500 text-lg md:text-xl mb-10 max-w-xl leading-relaxed"
+                    >
+                        Pelajari cara menjaga kesehatan lambung, kenali gejala
+                        awalnya, dan temukan pola hidup sehat bersama StomaCare.
+                    </p>
+                    <div
+                        class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+                    >
+                        <button
+                            onclick="
+                                document
+                                    .getElementById('features')
+                                    .scrollIntoView({ behavior: 'smooth' })
+                            "
+                            class="bg-stoma-green text-white px-8 py-4 rounded-2xl font-bold text-lg btn-hover shadow-lg"
+                        >
+                            Pelajari Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- FEATURES SECTION -->
+        <section
+            id="features"
+            class="px-6 md:px-20 py-32 bg-gray-50 rounded-t-[50px]"
+        >
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-20">
+                    <h2 class="text-4xl font-bold mb-2">
+                        Kenali Masalah Lambungmu
+                    </h2>
+                    <h2
+                        class="text-4xl font-bold text-stoma-light brightness-90"
+                    >
+                        Lebih Dalam
+                    </h2>
+                </div>
+
+                <!-- ✅ Grid 2 kolom ukuran sama -->
+                <div class="features-grid">
+                    <!-- Card 1: Gastritis -->
+                    <div class="relative group">
+                        <div class="card-bg-layer-top-right"></div>
+                        <div
+                            class="layered-card card-shadow border border-gray-100"
+                        >
+                            <div class="card-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3
+                                    class="font-bold text-2xl mb-4 text-[#1a3c30]"
+                                >
+                                    Gastritis (Maag)
+                                </h3>
+                                <p
+                                    class="text-gray-500 text-sm leading-relaxed mb-5"
+                                >
+                                    Gastritis adalah peradangan pada dinding
+                                    lambung. Ini bisa terjadi secara tiba-tiba
+                                    (akut) atau perlahan seiring waktu (kronis).
+                                </p>
+                                <ul
+                                    class="card-symptoms space-y-2 text-xs text-gray-400"
+                                >
+                                    <li>
+                                        • Nyeri menusuk atau panas di ulu hati.
+                                    </li>
+                                    <li>• Perut terasa penuh setelah makan.</li>
+                                    <li>
+                                        • Mual dan muntah (terkadang berdarah
+                                        jika parah).
+                                    </li>
+                                </ul>
+                                <div class="card-action">
+                                    <button
+                                        class="bg-[#458b68] text-white px-8 py-3 rounded-2xl font-bold flex items-center gap-2 btn-hover text-sm"
+                                    >
+                                        Coba Fitur Pengecekan
+                                        <i
+                                            class="fas fa-chevron-right text-[10px]"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: GERD (offset ke bawah, ukuran sama) -->
+                    <div class="relative group card-offset-down">
+                        <div class="card-bg-layer-bottom-left"></div>
+                        <div
+                            class="layered-card card-shadow border border-gray-100"
+                        >
+                            <div class="card-icon">
+                                <i class="fas fa-wave-square"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3
+                                    class="font-bold text-2xl mb-4 text-[#1a3c30]"
+                                >
+                                    GERD
+                                </h3>
+                                <p
+                                    class="text-gray-500 text-sm leading-relaxed mb-5"
+                                >
+                                    GERD terjadi ketika asam lambung berulang
+                                    kali naik ke kerongkongan karena katup perut
+                                    melemah.
+                                </p>
+                                <ul
+                                    class="card-symptoms space-y-2 text-xs text-gray-400"
+                                >
+                                    <li>
+                                        • Sensasi terbakar di dada (heartburn)
+                                        menjalar ke leher.
+                                    </li>
+                                    <li>
+                                        • Rasa asam atau pahit di belakang
+                                        mulut.
+                                    </li>
+                                    <li>
+                                        • Batuk kronis atau kesulitan menelan.
+                                    </li>
+                                </ul>
+                                <div class="card-action">
+                                    <button
+                                        class="bg-[#458b68] text-white px-8 py-3 rounded-2xl font-bold flex items-center gap-2 btn-hover text-sm"
+                                    >
+                                        Coba Fitur Pengecekan
+                                        <i
+                                            class="fas fa-chevron-right text-[10px]"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFERENCES SECTION -->
+        <section class="px-6 md:px-20 py-24 bg-white overflow-visible">
+            <div class="max-w-6xl mx-auto relative">
+                <div
+                    class="absolute -inset-1 bg-stoma-light/15 rounded-[3rem] -z-10 blur-sm"
+                ></div>
+                <div
+                    class="bg-white rounded-[40px] card-shadow relative overflow-hidden"
+                    style="
+                        padding: 2rem 3rem;
+                        border: 1.5px solid #c8e8d8;
+                        border-top: 6px solid #6dcea0;
+                        box-shadow:
+                            0 -4px 20px rgba(109, 206, 160, 0.25),
+                            0 8px 40px rgba(26, 60, 48, 0.08);
+                    "
+                >
+                    <div class="flex items-center gap-3 mb-10">
+                        <h3 class="text-2xl font-bold text-[#1a3c30]">
+                            Referensi & Wawasan Medis
+                        </h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <a
+                            href="https://ayosehat.kemkes.go.id/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-start gap-4 p-6 rounded-3xl ref-card border border-gray-50"
+                        >
+                            <i
+                                class="fas fa-external-link-alt text-stoma-light mt-1"
+                            ></i>
+                            <div>
+                                <h4 class="font-bold text-stoma-green text-lg">
+                                    Kementerian Kesehatan RI
+                                </h4>
+                                <p class="text-xs text-gray-500">
+                                    Panduan Pencegahan dan Pengendalian Penyakit
+                                    Pencernaan.
+                                </p>
+                            </div>
+                        </a>
+                        <a
+                            href="https://www.mayoclinic.org/diseases-conditions/gerd/symptoms-causes/syc-20361940"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-start gap-4 p-6 rounded-3xl ref-card border border-gray-50"
+                        >
+                            <i
+                                class="fas fa-external-link-alt text-stoma-light mt-1 text-sm"
+                            ></i>
+                            <div>
+                                <h4 class="font-bold text-stoma-green text-lg">
+                                    Mayo Clinic (Gastroenterology)
+                                </h4>
+                                <p class="text-xs text-gray-500">
+                                    Diagnosis dan Perawatan Terkini untuk Asam
+                                    Lambung & GERD.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER BANNER -->
+        <section class="px-6 md:px-20 py-20">
+            <div
+                class="max-w-6xl mx-auto bg-stoma-light rounded-[50px] p-12 md:p-20 text-center relative overflow-hidden shadow-xl"
+            >
+                <div class="relative z-10">
+                    <h2
+                        class="text-3xl md:text-5xl font-bold text-stoma-dark mb-6"
+                    >
+                        Mulai Pantau Kondisi Lambungmu Hari Ini!
+                    </h2>
+                    <p
+                        class="text-stoma-dark/60 text-lg mb-12 max-w-2xl mx-auto"
+                    >
+                        Akses fitur eksklusif: Pengecekan Gejala, Pengingat
+                        Jadwal Makan & Obat, serta Ensiklopedia Makanan yang
+                        aman untuk lambung.
+                    </p>
+                    <button
+                        class="bg-white text-stoma-dark px-12 py-4 rounded-full font-bold shadow-md btn-hover"
+                    >
+                        Daftar Gratis Sekarang
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-stoma-green py-16 px-6 text-white text-center">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-8">
+                    <span class="text-3xl font-bold tracking-widest uppercase"
+                        >StomaCare</span
+                    >
+                    <p class="text-sm text-white/70 mt-3">
+                        © 2026 StomaCare. Solusi Pintar Kesehatan Lambung Anda.
+                    </p>
+                </div>
+                <p
+                    class="text-[11px] text-white/50 max-w-3xl mx-auto leading-relaxed italic"
+                >
+                    Disclaimer: Informasi ini untuk edukasi, bukan pengganti
+                    diagnosis atau saran medis dari dokter profesional.
+                </p>
+            </div>
+        </footer>
+
+        <!-- ✅ Script di akhir body -->
+        <script src="js/script.js"></script>
+    </body>
 </html>
